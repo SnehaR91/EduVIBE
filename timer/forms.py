@@ -11,6 +11,7 @@ class PomodoroForm(forms.ModelForm):
           'minutes': forms.NumberInput(attrs={'required': 'required'}),
           'seconds': forms.NumberInput(attrs={'required': 'required'}),
           'category': forms.TextInput(attrs={'required': 'required'}),
+          'priority': forms.NumberInput(attrs={'required': 'required'}),
       }
  
   def clean(self):
